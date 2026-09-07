@@ -1,0 +1,13 @@
+node_modules/
+release/
+dist/
+
+# Real business data must never be committed
+erp.db
+erp.db-journal
+erp.db-wal
+erp.db-shm
+backups/
+
+# Sample/demo database IS allowed:
+!erp.sample.db

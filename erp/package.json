@@ -1,0 +1,23 @@
+{
+  "name": "paint-factory-erp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fully offline ERP for a paint manufacturing/trading business (Express + SQLite + Electron)",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "init-db": "node server/init-db.js",
+    "electron": "electron .",
+    "package:win": "electron-packager . \"PaintERP\" --platform=win32 --arch=x64 --out=release --overwrite"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  },
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-packager": "^17.1.2"
+  }
+}
